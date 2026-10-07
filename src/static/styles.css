@@ -28,6 +28,33 @@ header h1 {
   margin-bottom: 10px;
 }
 
+.account-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.account-controls button,
+.secondary-button {
+  width: auto;
+}
+
+.secondary-button {
+  margin-left: 8px;
+  background-color: #5f6b7a;
+}
+
+#login-container {
+  max-width: 500px;
+}
+
+#login-container form button {
+  margin-top: 4px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -111,18 +138,18 @@ section h3 {
 }
 
 .delete-btn {
-  background: none;
-  border: none;
-  color: #c62828;
+  background-color: #c62828;
+  color: white;
   cursor: pointer;
-  font-size: 14px;
-  padding: 2px 5px;
+  font-size: 13px;
+  padding: 5px 8px;
   transition: all 0.2s;
   border-radius: 3px;
+  width: auto;
 }
 
 .delete-btn:hover {
-  background-color: #ffebee;
+  background-color: #a61f1f;
 }
 
 .participants-section p {

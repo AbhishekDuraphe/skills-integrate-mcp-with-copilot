@@ -10,9 +10,30 @@
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <div id="account-controls" class="account-controls">
+        <span id="account-status">Viewing as guest</span>
+        <button id="login-toggle" type="button">Teacher log in</button>
+        <button id="logout-button" class="hidden" type="button">Log out</button>
+      </div>
     </header>
 
     <main>
+      <section id="login-container" class="hidden">
+        <h3>Teacher sign in</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" autocomplete="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" autocomplete="current-password" required />
+          </div>
+          <button type="submit">Log in</button>
+          <button id="login-cancel" class="secondary-button" type="button">Cancel</button>
+        </form>
+      </section>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
@@ -21,7 +42,7 @@
         </div>
       </section>
 
-      <section id="signup-container">
+      <section id="signup-container" class="hidden">
         <h3>Sign Up for an Activity</h3>
         <form id="signup-form">
           <div class="form-group">
